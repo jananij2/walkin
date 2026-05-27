@@ -5,6 +5,10 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-figtree)", "ui-sans-serif", "system-ui", "sans-serif"],
+        title: ["var(--font-lobster-two)", "cursive"]
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
