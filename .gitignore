@@ -1,10 +1,31 @@
-node_modules
-.next
-out
-dist
+# JavaScript / Node
+node_modules/
+frontend/dist/
+
+# Next.js (kept until Stage 4 cleanup)
+.next/
+*.tsbuildinfo
+
+# Python
+backend/.venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment & secrets
 .env
 .env.local
 .env*.local
-coverage
+!.env.example
+
+# Coverage / build output
+coverage/
+out/
+
+# macOS
 .DS_Store
-*.tsbuildinfo
